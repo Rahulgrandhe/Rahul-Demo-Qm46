@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    height: 100%;
+    box-sizing: border-box; 
+  }
+  
+  .image {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .form {
+    flex: 1;
+    padding: 40px;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+    color: white; 
+    text-align: center;
+  }
+  
+  .form label {
+    color: white;
+  }
+  
+  .form input[type="text"],
+  .form input[type="password"],
+  .form input[type="submit"] {
+    width: calc(100% - 24px); 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  .form input[type="text"],
+  .form input[type="password"] {
+    margin-bottom: 20px;
+  }
+  
+ 
+  .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+  }
+  
