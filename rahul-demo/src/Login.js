@@ -5,6 +5,7 @@ import Logo from './Assests/Company.jpg' ;
 
 function Login() {
   return (
+    <>
     <div className="container">
     <div className="image">
       <img src={Logo} alt="Logo" />
@@ -23,6 +24,7 @@ function Login() {
       </div>
     </div>
   </div>
+  </>
   );
 }
 
