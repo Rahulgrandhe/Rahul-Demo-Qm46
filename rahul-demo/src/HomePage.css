@@ -86,6 +86,7 @@
     color: white;
     width: 190px;
     transition: transform 0.3s ease;
+    font-size: 0.9rem;
   }
   
   .sidebar.closed {

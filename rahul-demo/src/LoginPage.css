@@ -1,6 +1,9 @@
+body, .container, .form, .label, input[type="text"], input[type="password"], .forgot-password a {
+  font-family: 'Google Sans', sans-serif;
+}
 .container {
     display: flex;
-    max-width: 100%;
+    max-width: 1400px; 
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -22,7 +25,7 @@
   .form {
     flex: 1;
     padding: 40px;
-    background-color: #007bff;
+    background-color: #4A9FC6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,28 +38,32 @@
   }
   
   .form label {
-    color: white;
+    color: #4A9FC6;
   }
   
   .form input[type="text"],
   .form input[type="password"],
   .form input[type="submit"] {
-    width: calc(100% - 24px); 
+    width: (70% ); 
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   
   .form input[type="submit"] {
-    background-color: #007bff;
+    background-color: #4A9FC6 ;
     color: #fff;
     cursor: pointer;
+    margin-left: 45%;
   }
   
   .form input[type="submit"]:hover {
     background-color: #0056b3;
+    
   }
   
  
@@ -70,5 +77,6 @@
     text-align: center;
     margin-top: 10px;
     color: white;
+    font-size: small;
   }
-  
+    

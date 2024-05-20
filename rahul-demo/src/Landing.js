@@ -1,22 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './Landing.css';  
 
 function LandingPage() {
   return (
-    <div style={{
-      backgroundColor: '#fff',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-    }}>
-      <div style={{ textAlign: 'center' }}>
-        <h1 style={{ color: '#007bff' }} >Welcome </h1>
-        <div style={{ marginTop: '40px' }}>
-          <button style={{ backgroundColor: '#007bff', color: '#fff', padding: '20px 30px', margin: '20px', borderRadius: '10px', border: 'none', cursor: 'pointer' }}>Document Master</button>
-         <Link to ='/home-page'> <button style={{ backgroundColor: '#007bff', color: '#fff', padding: '20px 30px', margin: '20px', borderRadius: '10px', border: 'none', cursor: 'pointer' }} >Document Manager</button></Link>
-          <button style={{ backgroundColor: '#007bff', color: '#fff', padding: '20px 30px', margin: '20px', borderRadius: '10px', border: 'none', cursor: 'pointer' }}>Admin Panel</button>
+    <div className="landing-container">
+      <div className="landing-content">
+        <h1 className="landing-title">Welcome</h1>
+        <div className="landing-buttons">
+          <button className="landing-button">Document Master</button>
+          <Link to="/home-page">
+            <button className="landing-button">Document Manager</button>
+          </Link>
+          <button className="landing-button">Admin Panel</button>
         </div>
       </div>
     </div>
