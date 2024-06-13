@@ -6,7 +6,13 @@
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
+
+ 
+  
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.19",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -22,6 +28,17 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
+  
+    "dependencies": {
+      "@mui/material": "^5.0.0",
+      "@emotion/react": "^11.0.0",
+      "@emotion/styled": "^11.0.0",
+      "react": "^17.0.0",
+      "react-dom": "^17.0.0"
+    
+  },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
