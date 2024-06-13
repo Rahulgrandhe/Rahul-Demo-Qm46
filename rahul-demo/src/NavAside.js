@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './NavAside.css';
+import Draft from './Draft';
+import DocumentRepository from './DocumentRepository';
+
 
 
 function NavAside({ userId }) {
