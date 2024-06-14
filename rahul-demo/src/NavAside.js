@@ -57,6 +57,8 @@ function NavAside({ userId }) {
           </div>
         </div>
       </nav>
+
+
       <div className="container">
         <aside className={`sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
           <div className="sidebar-item" onClick={toggleDocumentStage}>
@@ -70,6 +72,7 @@ function NavAside({ userId }) {
               <div><Link to="/Department">Effective</Link></div>
             </div>
           )}
+          
           <div className="sidebar-item">
             Audit Trails
           </div>

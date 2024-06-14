@@ -31,7 +31,7 @@ function Draft() {
   return (
     <>
     <HomePage/>
-    <div style={{paddingTop:'0.2cm',paddingLeft:'120px'}}>
+    <div style={{paddingTop:'0.2cm',paddingLeft:'130px'}}>
     <div className="draft-container" >
       <div className="button-container">
         <CreateNewForm/>
