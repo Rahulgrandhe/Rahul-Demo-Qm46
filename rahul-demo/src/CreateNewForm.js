@@ -1,9 +1,10 @@
 // import React, { useState, useEffect } from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
 // import './CreateNewForm.css';
-// import Draft from "./Draft";
-// import ESignModal from "./ESignModal";
+// // import Draft from './Draft';
+// // import ESignModal from './ESignModal';
 
-//  function CreateNewForm({ isVisible, onClose, onSubmit }) {
+// function CreateNewForm({ isVisible, onClose, onSubmit }) {
 //   const [formData, setFormData] = useState({
 //     documentType: 'mainDocument',
 //     documentTitle: '',
@@ -17,6 +18,8 @@
 //     description: ''
 //   });
 
+//   const navigate = useNavigate();
+
 //   const handleInputChange = (event) => {
 //     const { name, value } = event.target;
 //     setFormData(prevState => ({
@@ -29,6 +32,7 @@
 //     event.preventDefault();
 //     onSubmit(formData);
 //     onClose();
+//     history.push('/ESignModal'); 
 //   };
 
 //   const generateDocumentNumber = () => {
@@ -227,7 +231,7 @@
 //           </div>
 
 //           <div className="form-submit-container">
-//             <button type="submit"><Link to="/ESignModal">Submit</Link></button>
+//             <button type="submit">Submit</button>
 //           </div>
 //         </form>
 //       </div>
@@ -235,15 +239,11 @@
 //   );
 // }
 
-// export default CreateNewForm;         
-
-
+// export default CreateNewForm;
 
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './CreateNewForm.css';
-import Draft from "./Draft";
-import ESignModal from "./ESignModal";
 
 function CreateNewForm({ isVisible, onClose, onSubmit }) {
   const [formData, setFormData] = useState({
@@ -259,7 +259,7 @@ function CreateNewForm({ isVisible, onClose, onSubmit }) {
     description: ''
   });
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -273,7 +273,7 @@ function CreateNewForm({ isVisible, onClose, onSubmit }) {
     event.preventDefault();
     onSubmit(formData);
     onClose();
-    history.push('/ESignModal'); // Programmatically navigate to the new route
+    navigate('/ESignModal');
   };
 
   const generateDocumentNumber = () => {
@@ -481,3 +481,4 @@ function CreateNewForm({ isVisible, onClose, onSubmit }) {
 }
 
 export default CreateNewForm;
+

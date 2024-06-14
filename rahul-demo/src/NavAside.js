@@ -66,10 +66,10 @@ function NavAside({ userId }) {
           </div>
           {documentStageOpen && (
             <div className="sidebar-subitem">
-              <div><Link to="/Draft">Draft</Link></div>
-              <div><Link to="/Review">Review</Link></div>
-              <div><Link to="/Approve">Approve</Link></div>
-              <div><Link to="/Department">Effective</Link></div>
+              <div><Link to="/Draft" style={{color:'white', textDecoration:'none'}}>Draft</Link></div>
+              <div><Link to="/Review" style={{color:'white', textDecoration:'none'}}>Review</Link></div>
+              <div><Link to="/Approve" style={{color:'white', textDecoration:'none'}}>Approve</Link></div>
+              <div><Link to="/Department" style={{color:'white', textDecoration:'none'}}>Effective</Link></div>
             </div>
           )}
           
@@ -77,7 +77,7 @@ function NavAside({ userId }) {
             Audit Trails
           </div>
           <div className="sidebar-item">
-           <Link to="/DocumentRepository">Document Repository</Link>
+           <Link to="/DocumentRepository" style={{color:'white', textDecoration:'none'}}>Document Repository</Link>
           </div>
         </aside>
       </div>

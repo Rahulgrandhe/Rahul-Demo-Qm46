@@ -144,6 +144,7 @@
   .sidebar-subitem {
     background-color: #555;
     padding-left: 1rem;
+    font-style: white;
   }
   
   .sidebar-subitem > div {

@@ -34,9 +34,9 @@ function Draft() {
     <div style={{paddingTop:'0.2cm',paddingLeft:'130px'}}>
     <div className="draft-container" >
       <div className="button-container">
-        <CreateNewForm/>
-        <button className="draft-button"><Link to="/CreateNewForm">CreateNew+</Link></button>
-        <button className="draft-button"><Link to="/Edit">Edit</Link></button>
+        {/* <CreateNewForm/> */}
+        <button className="draft-button"><Link to="/CreateNewForm" style={{color:'white', textDecoration:'none'}}>CreateNew+</Link></button>
+        <button className="draft-button"><Link to="/Edit" style={{color:'white', textDecoration:'none'}}>Edit</Link></button>
         <button className="draft-button">Send For Review</button>
         <button className="draft-button">Status Change</button>
       </div>
