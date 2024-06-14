@@ -13,7 +13,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/Login" element={<Login/>} />
+          <Route path="/" element={<Login/>} />
           <Route path="/LandingPage" element={<Landing/>} />
           <Route path="/HomePage" element={<HomePage/>} />
           <Route path='/Draft' element={<Draft/>}/>
@@ -48,7 +48,6 @@ export default App;
 //         <Route path="/Draft" element={<Draft />} />
 //         <Route path="/Effective" element={<Effective />} />
 //         <Route path="/DocumentRepository" element={<DocumentRepository/>}/>
-
 //       </Routes>
 //     </Router>
 //   );
@@ -56,15 +55,15 @@ export default App;
 
 // export default App;
 
-// // import React from 'react'
-// // import OrganizationPage from './Organization';
+// import React from 'react';
+// import Draft from './Draft';
 
-// // const App = () => {
-// //   return (
-// //     <div>
-// //       <Organization/>
-// //     </div>
-// //   )
-// // }
+// const App = () => {
+//   return (
+//     <div>
+//       <Draft/>
+//     </div>
+//   )
+// }
 
-// // export default App
+// export default App

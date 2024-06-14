@@ -3,6 +3,7 @@ import './Draft.css';
 import HomePage from './HomePage';
 import { Link } from '@mui/material';
 import CreateNewForm from './CreateNewForm';
+import Edit from './Edit';
 
 
 function Draft() {
@@ -34,8 +35,8 @@ function Draft() {
     <div className="draft-container" >
       <div className="button-container">
         <CreateNewForm/>
-        <button className="draft-button"><Link to="./CreateNewForm">Create New</Link></button>
-        <button className="draft-button">Edit</button>
+        <button className="draft-button"><Link to="/CreateNewForm">Create New</Link></button>
+        <button className="draft-button"><Link to="/Edit">Edit</Link></button>
         <button className="draft-button">Send For Review</button>
         <button className="draft-button">Status Change</button>
       </div>

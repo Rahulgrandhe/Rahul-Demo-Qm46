@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './NavAside.css';
-import Draft from './Draft';
-import DocumentRepository from './DocumentRepository';
+import Draft from "./Draft";
+import DocumentRepository from "./DocumentRepository";
 
 
 
@@ -64,17 +64,17 @@ function NavAside({ userId }) {
           </div>
           {documentStageOpen && (
             <div className="sidebar-subitem">
-              <div><Link to="./Draft">Draft</Link></div>
-              <div><Link to="./Review">Review</Link></div>
-              <div><Link to="./Approve">Approve</Link></div>
-              <div><Link to="./Department">Effective</Link></div>
+              <div><Link to="/Draft">Draft</Link></div>
+              <div><Link to="/Review">Review</Link></div>
+              <div><Link to="/Approve">Approve</Link></div>
+              <div><Link to="/Department">Effective</Link></div>
             </div>
           )}
           <div className="sidebar-item">
             Audit Trails
           </div>
           <div className="sidebar-item">
-           <Link to="./DocumentRepository">Document Repository</Link>
+           <Link to="/DocumentRepository">Document Repository</Link>
           </div>
         </aside>
       </div>

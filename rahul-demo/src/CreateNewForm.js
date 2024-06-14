@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './CreateNewForm.css';
+import Draft from "./Draft";
+import ESignModal from "./ESignModal";
 
-function CreateNewForm({ isVisible, onClose, onSubmit }) {
+ function CreateNewForm({ isVisible, onClose, onSubmit }) {
   const [formData, setFormData] = useState({
     documentType: 'mainDocument',
     documentTitle: '',
@@ -225,7 +227,7 @@ function CreateNewForm({ isVisible, onClose, onSubmit }) {
           </div>
 
           <div className="form-submit-container">
-            <button type="submit">Submit</button>
+            <button type="submit"><Link to='/ESignModal'>Submit</Link></button>
           </div>
         </form>
       </div>
