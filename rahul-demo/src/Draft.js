@@ -35,7 +35,7 @@ function Draft() {
     <div className="draft-container" >
       <div className="button-container">
         <CreateNewForm/>
-        <button className="draft-button"><Link to="/CreateNewForm">Create New</Link></button>
+        <button className="draft-button"><Link to="/CreateNewForm">CreateNew+</Link></button>
         <button className="draft-button"><Link to="/Edit">Edit</Link></button>
         <button className="draft-button">Send For Review</button>
         <button className="draft-button">Status Change</button>
